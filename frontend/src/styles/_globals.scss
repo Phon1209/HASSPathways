@@ -1,14 +1,90 @@
 /* Global CSS styles go here */
+// Global setting
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+// Color Setting
+:root {
+  // Base Color
+  --white: #fff;
+  --black: #000;
+
+  //   Status bar color
+  --status-bar-active: #c50606;
+  --status-bar-inactive: #a9a9a9;
+  --status-bar-inprogress-border: #fecdc9;
+  --status-bar-inprogress-fill: #fee4e2;
+
+  // Primary Color
+
+  // Warning Color
+
+  // Success Color
+
+  // Gray Color
+
+  // Blue Light Color
+  //   Add more to reflex style in figma
+}
+
+// Typography Setting
+.text {
+  &-xs {
+  }
+
+  &-sm {
+  }
+
+  &-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &-xl {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  //   Add more to reflex style in figma
+}
+
+.display {
+  &-xs {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  //   Add more to reflex style in figma
+}
+
+.font {
+  &-regular {
+    font-weight: 400;
+  }
+  &-medium {
+    font-weight: 500;
+  }
+  &-semibold {
+    font-weight: 600;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+}
 
 /* Changes tabs: remove space before
  * scrollable tabs on mobile */
 .v-slide-group__prev {
-    display: none !important;
+  display: none !important;
 }
 
 /* Darken default card text color */
 .theme--light.v-card > .v-card__text,
 .theme--light.v-card > .v-card__subtitle {
-    color: black !important;
-    font-weight: normal;
+  color: black !important;
+  font-weight: normal;
 }

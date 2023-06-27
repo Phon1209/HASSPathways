@@ -37,19 +37,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '@/styles/_globals.scss';
-</style>
-
 <style>
-#app {
-    font-family: 'Muli', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-bottom: 50px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>    
 
-.main-content {
-    min-height: 100vh;
-}
+<style lang="scss">
+  @import '@/styles/_globals.scss';
 </style>
+
