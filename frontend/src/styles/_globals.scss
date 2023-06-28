@@ -10,54 +10,158 @@
 // Color Setting
 :root {
   // Base Color
-  --white: #fff;
-  --black: #000;
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
 
   //   Status bar color
-  --status-bar-active: #c50606;
-  --status-bar-inactive: #a9a9a9;
-  --status-bar-inprogress-border: #fecdc9;
-  --status-bar-inprogress-fill: #fee4e2;
+  --status-bar-active: rgba(197, 6, 6, 1);
+  --status-bar-inactive: rgba(169, 169, 169, 1);
+  --status-bar-in-progress: rgba(254, 205, 201, 1);
+  --status-bar-in-progress-fill: rgba(254, 228, 226, 1);
 
   // Primary Color
+  --primary-950: rgba(85, 22, 12, 1);
+  --primary-900: rgba(122, 39, 26, 1);
+  --primary-800: rgba(145, 32, 24, 1);
+  --primary-700: rgba(180, 35, 24, 1);
+  --primary-600: rgba(217, 45, 32, 1);
+  --primary-500: rgba(240, 68, 56, 1);
+  --primary-400: rgba(249, 112, 102, 1);
+  --primary-300: rgba(253, 162, 155, 1);
+  --primary-200: rgba(254, 205, 202, 1);
+  --primary-100: rgba(254, 228, 226, 1);
+  --primary-50: rgba(254, 243, 242, 1);
+  --primary-25: rgba(255, 251, 250, 1);
 
   // Warning Color
+  --warning-950: rgba(78, 29, 9, 1);
+  --warning-900: rgba(122, 46, 14, 1);
+  --warning-800: rgba(147, 55, 13, 1);
+  --warning-700: rgba(181, 71, 8, 1);
+  --warning-600: rgba(220, 104, 3, 1);
+  --warning-500: rgba(247, 144, 9, 1);
+  --warning-400: rgba(253, 176, 34, 1);
+  --warning-300: rgba(254, 200, 75, 1);
+  --warning-200: rgba(254, 223, 137, 1);
+  --warning-100: rgba(254, 240, 199, 1);
+  --warning-50: rgba(255, 250, 235, 1);
+  --warning-25: rgba(255, 252, 245, 1);
 
   // Success Color
+  --success-950: rgba(5, 51, 33, 1);
+  --success-900: rgba(7, 77, 49, 1);
+  --success-800: rgba(8, 93, 58, 1);
+  --success-700: rgba(6, 118, 71, 1);
+  --success-600: rgba(7, 148, 85, 1);
+  --success-500: rgba(23, 178, 106, 1);
+  --success-400: rgba(71, 205, 137, 1);
+  --success-300: rgba(117, 224, 167, 1);
+  --success-200: rgba(171, 239, 198, 1);
+  --success-100: rgba(220, 250, 230, 1);
+  --success-50: rgba(236, 253, 243, 1);
+  --success-25: rgba(246, 254, 249, 1);
 
   // Gray Color
+  --gray-950: rgba(12, 17, 29, 1);
+  --gray-900: rgba(16, 24, 40, 1);
+  --gray-800: rgba(29, 41, 57, 1);
+  --gray-700: rgba(52, 64, 84, 1);
+  --gray-600: rgba(71, 84, 103, 1);
+  --gray-500: rgba(102, 112, 133, 1);
+  --gray-400: rgba(152, 162, 179, 1);
+  --gray-300: rgba(208, 213, 221, 1);
+  --gray-200: rgba(234, 236, 240, 1);
+  --gray-100: rgba(242, 244, 247, 1);
+  --gray-50: rgba(249, 250, 251, 1);
+  --gray-25: rgba(252, 252, 253, 1);
 
   // Blue Light Color
-  //   Add more to reflex style in figma
+  --blue-light-950: rgba(6, 44, 65, 1);
+  --blue-light-900: rgba(11, 74, 111, 1);
+  --blue-light-800: rgba(6, 89, 134, 1);
+  --blue-light-700: rgba(2, 106, 162, 1);
+  --blue-light-600: rgba(0, 134, 201, 1);
+  --blue-light-500: rgba(11, 165, 236, 1);
+  --blue-light-400: rgba(54, 191, 250, 1);
+  --blue-light-300: rgba(124, 212, 253, 1);
+  --blue-light-200: rgba(185, 230, 254, 1);
+  --blue-light-100: rgba(224, 242, 254, 1);
+  --blue-light-50: rgba(240, 249, 255, 1);
+  --blue-light-25: rgba(245, 251, 255, 1);
+}
+
+:root {
+  --text-xs: 0.75rem;
+  --text-sm: 0.88rem;
+  --text-md: 1rem;
+  --text-lg: 1.12rem;
+  --text-xl: 1.25rem;
+  --display-xs: 1.5rem;
+  --display-sm: 1.88rem;
+  --display-md: 2.25rem;
+  --display-lg: 3rem;
+  --display-xl: 3.75rem;
+  --display-2xl: 4.5rem;
 }
 
 // Typography Setting
 .text {
   &-xs {
+    font-size: var(--text-xs, 0.75rem);
+    line-height: 1.125rem;
   }
 
   &-sm {
+    font-size: var(--text-sm, 0.88rem);
+    line-height: 1.25rem;
   }
 
   &-md {
-    font-size: 1rem;
+    font-size: var(--text-md, 1rem);
     line-height: 1.5rem;
   }
 
-  &-xl {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+  &-lg {
+    font-size: var(--text-lg, 1.12rem);
+    line-height: 1.75rem;
   }
 
-  //   Add more to reflex style in figma
+  &-xl {
+    font-size: var(--text-xl, 1.25rem);
+    line-height: 1.875rem;
+  }
 }
 
 .display {
   &-xs {
-    font-size: 1.5rem;
+    font-size: var(--display-xs, 1.5rem);
     line-height: 2rem;
   }
 
+  &-sm {
+    font-size: var(--display-sm, 1.88rem);
+    line-height: 2.25rem;
+  }
+
+  &-md {
+    font-size: var(--display-md, 2.25rem);
+    line-height: 2.75rem;
+  }
+
+  &-lg {
+    font-size: var(--display-lg, 3rem);
+    line-height: 3.75rem;
+  }
+
+  &-xl {
+    font-size: var(--display-xl, 3.75rem);
+    line-height: 4.5rem;
+  }
+
+  &-2xl {
+    font-size: var(--display-2xl, 4.5rem);
+    line-height: 5rem;
+  }
   //   Add more to reflex style in figma
 }
 
@@ -74,17 +178,4 @@
   &-bold {
     font-weight: 700;
   }
-}
-
-/* Changes tabs: remove space before
- * scrollable tabs on mobile */
-.v-slide-group__prev {
-  display: none !important;
-}
-
-/* Darken default card text color */
-.theme--light.v-card > .v-card__text,
-.theme--light.v-card > .v-card__subtitle {
-  color: black !important;
-  font-weight: normal;
 }
